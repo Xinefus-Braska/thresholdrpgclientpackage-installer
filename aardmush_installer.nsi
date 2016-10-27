@@ -4,7 +4,7 @@
 ;
 ;--------------------------------
 
-; Find version string and put it into PackageVersion variable
+; Find version string and put it into PackageVersion variable.
 !system "GetAardwolfPackageVersion.exe"
 !include "PackageVersion.txt"
 !delfile "PackageVersion.txt"
@@ -27,17 +27,17 @@ DirText "This will install the Aardwolf MUSHclient Package ( ${PackageVersion} )
 ;--------------------------------
 
 ; Installation section
-Section "" ;No components page, name is not important
+Section "" ; No components page, name not important
 
 ; Set output path to the installation directory.
 SetOutPath $INSTDIR
 
-; Add these files always
+; Add most files always, e"x"cluding the listed ones.
 SetOverwrite on
 AllowSkipFiles off
 File /r /x Aardwolf.db /x Aardwolf.mcl /x state /x mushclient_prefs.sqlite /x MUSHclient.ini /x .gitignore MUSHclient\*
 
-; Add these files only if not already there
+; Add the next files only if not already there.
 ; You could technically do this in one line after SetOverwrite off
 ; with Files /r MUSHclient\* again, but then the installer reports
 ; double the required space even though it's all just duplicates.
@@ -52,4 +52,4 @@ File MUSHclient\worlds\plugins\state\*
 SetOutPath $INSTDIR
 
 
-SectionEnd ; end the section
+SectionEnd ; Installation section
