@@ -4,6 +4,12 @@
 ;
 ;--------------------------------
 
+; We want to get version information at compile time. The docs say to
+; make a second installer that can be "!system"ed to generate a
+; text file with a "!define" in it and then "!include" that file.
+; We can even compile that second installer here.
+!makensis "get_version.nsi"
+
 ; Find version string and put it into PackageVersion variable.
 !system "GetAardwolfPackageVersion.exe"
 !include "PackageVersion.txt"
