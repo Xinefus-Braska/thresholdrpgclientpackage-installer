@@ -24,12 +24,25 @@ Name "Aardwolf MUSHclient ${PackageVersion}"
 ; File to write
 OutFile "Aardwolf_MUSHclient.exe"
 
+; rtf or txt file - remember if it is txt, it must be in the DOS text format (\r\n)
+LicenseData "license.rtf"
+
 ; Default installation directory
-InstallDir $DESKTOP\MUSHclient
+InstallDir $DESKTOP\AardwolfMUSHclient
+
+; Registry key to check for directory (so if you install again, it will 
+; overwrite the old one automatically)
+InstallDirRegKey HKCU "Software\AardwolfMUSHclient" "Install_Dir"
+
+; Request application privileges?
+;RequestExecutionLevel admin
 
 ; Text to prompt the user to enter a directory
 DirText "This will install the Aardwolf MUSHclient Package ( ${PackageVersion} )."
 
+Page license
+Page directory
+Page instfiles
 ;--------------------------------
 
 ; Installation section
@@ -37,6 +50,9 @@ Section "" ; No components page, name not important
 
 ; Set output path to the installation directory.
 SetOutPath $INSTDIR
+
+; Write the installation path into the registry
+WriteRegStr HKCU "Software\AardwolfMUSHclient" "Install_Dir" "$INSTDIR"
 
 ; Add most files always, e"x"cluding the listed ones.
 SetOverwrite on
