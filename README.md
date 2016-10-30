@@ -17,6 +17,6 @@ git clone --depth 1 git@github.com:fiendish/aardwolfclientpackage.git NEW_AARDMU
 cd NEW_AARDMUSH_RELEASE
 wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/aardmush_installer.nsi
 wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/get_version.nsi
-wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/license.rtf
+wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/hello.rtf
 wine ~/.wine/drive_c/Program\ Files/NSIS/makensis.exe aardmush_installer.nsi
 ```

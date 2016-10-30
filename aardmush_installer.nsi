@@ -25,7 +25,7 @@ Name "Aardwolf MUSHclient ${PackageVersion}"
 OutFile "Aardwolf_MUSHclient_${PackageVersion}.exe"
 
 ; rtf or txt file - remember if it is txt, it must be in the DOS text format (\r\n)
-LicenseData "license.rtf"
+LicenseData "hello.rtf"
 
 ; Default installation directory
 InstallDir $DESKTOP\AardwolfMUSHclient
