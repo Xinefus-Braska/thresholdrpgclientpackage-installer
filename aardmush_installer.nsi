@@ -22,7 +22,7 @@ ShowInstDetails show
 Name "Aardwolf MUSHclient ${PackageVersion}"
 
 ; File to write
-OutFile "Aardwolf_MUSHclient.exe"
+OutFile "Aardwolf_MUSHclient_${PackageVersion}.exe"
 
 ; rtf or txt file - remember if it is txt, it must be in the DOS text format (\r\n)
 LicenseData "license.rtf"
@@ -72,6 +72,5 @@ File MUSHclient\worlds\Aardwolf.mcl
 SetOutPath $INSTDIR\worlds\plugins\state
 File MUSHclient\worlds\plugins\state\*
 SetOutPath $INSTDIR
-
 
 SectionEnd ; Installation section
