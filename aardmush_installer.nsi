@@ -28,7 +28,7 @@ OutFile "Aardwolf_MUSHclient_${PackageVersion}.exe"
 LicenseData "hello.rtf"
 
 ; Default installation directory
-InstallDir $DESKTOP\AardwolfMUSHclient
+InstallDir $DESKTOP\MUSHclient
 
 ; Registry key to check for directory (so if you install again, it will 
 ; overwrite the old one automatically)
