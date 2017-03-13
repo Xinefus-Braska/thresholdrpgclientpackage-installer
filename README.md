@@ -18,5 +18,5 @@ cd NEW_AARDMUSH_RELEASE
 wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/aardmush_installer.nsi
 wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/get_version.nsi
 wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/hello.rtf
-wine ~/.wine/drive_c/Program\ Files/NSIS/makensis.exe aardmush_installer.nsi
+wine ~/.wine/drive_c/Program\ Files\ \(x86\)/NSIS/makensis.exe aardmush_installer.nsi
 ```
