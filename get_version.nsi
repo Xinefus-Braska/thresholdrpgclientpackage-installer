@@ -130,7 +130,7 @@ Section
 ; Get file version
 ${LineRead} "MUSHclient\AardwolfPackageChanges.txt" "3" $R0
 
-${StrRep} $R0 $R0 ":$\r$\n" ""
+${StrRep} $R0 $R0 "$\r$\n" ""
 ${StrRep} $R0 $R0 " snapshot" ""
 
 ; http://nsis.sourceforge.net/Invoking_NSIS_run-time_commands_on_compile-time
