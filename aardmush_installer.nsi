@@ -3,6 +3,7 @@
 ; Finally, an installer generator for the Aardwolf MUSHclient Package?
 ;
 ;--------------------------------
+SetCompressor /SOLID /FINAL lzma
 
 ; We want to get version information at compile time. The docs say to
 ; make a second installer that can be "!system"ed to generate a
