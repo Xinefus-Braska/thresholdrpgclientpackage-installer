@@ -1,17 +1,20 @@
 # aardwolfclientpackage-installer
 Installer creation scripts for https://github.com/fiendish/aardwolfclientpackage
+This is run automatically with AppVeyor to build release installers whenever code is pushed to the main branch.
 
-Directions:
+
+Directions for running manually:
 
 1. Put these files above a freshly cloned MUSHclient directory
-2. Use MakeNSIS or MakeNSISW to compile aardmush_installer.nsi
+2. Run MakeNSIS on aardmush_installer.nsi
 
-I use it in GNU/Linux with Wine by:
+In GNU/Linux with Wine on my machine, the invocation for MakeNSIS is:
+
 `wine ~/.wine/drive_c/Program\ Files/NSIS/makensis.exe aardmush_installer.nsi`
 
 I imagine the Windows invocation is not strikingly dissimilar.
 
-Sample invocation:
+Sample use:
 ```
 git clone -b MUSHclient --depth 1 git@github.com:fiendish/aardwolfclientpackage.git NEW_AARDMUSH_RELEASE
 cd NEW_AARDMUSH_RELEASE
