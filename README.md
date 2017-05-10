@@ -13,7 +13,7 @@ I imagine the Windows invocation is not strikingly dissimilar.
 
 Sample invocation:
 ```
-git clone -b development --depth 1 git@github.com:fiendish/aardwolfclientpackage.git NEW_AARDMUSH_RELEASE
+git clone -b MUSHclient --depth 1 git@github.com:fiendish/aardwolfclientpackage.git NEW_AARDMUSH_RELEASE
 cd NEW_AARDMUSH_RELEASE
 wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/aardmush_installer.nsi
 wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/get_version.nsi
