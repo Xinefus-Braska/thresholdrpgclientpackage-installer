@@ -15,7 +15,7 @@ I imagine the Windows invocation is not strikingly dissimilar.
 
 Sample use:
 ```
-git clone -b MUSHclient --depth 1 git@github.com:Xinefus-Braska/thresholdrpgclientpackage.git NEW_AARDMUSH_RELEASE
+git clone -b MUSHclient --depth 1 git@github.com:Xinefus-Braska/thresholdrpgclientpackage.git NEW_THRESHMUSH_RELEASE
 cd NEW_THRESHMUSH_RELEASE
 wget https://raw.githubusercontent.com/Xinefus-Braska/thresholdrpgclientpackage-installer/master/threshmush_installer.nsi
 wget https://raw.githubusercontent.com/Xinefus-Braska/thresholdrpgclientpackage-installer/master/get_version.nsi
