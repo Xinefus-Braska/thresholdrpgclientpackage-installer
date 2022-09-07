@@ -58,7 +58,7 @@ WriteRegStr HKCU "Software\ThresholdRPGMUSHclient" "Install_Dir" "$INSTDIR"
 ; Add most files always, e"x"cluding the listed ones.
 SetOverwrite on
 AllowSkipFiles off
-File /r /x Aardwolf.db /x Aardwolf.mcl /x state /x mushclient_prefs.sqlite /x MUSHclient.ini /x .gitignore /x appveyor.yml MUSHclient\*
+File /r /x Aardwolf.db /x ThresholdRPG.mcl /x state /x mushclient_prefs.sqlite /x MUSHclient.ini /x .gitignore /x appveyor.yml MUSHclient\*
 
 ; Add the next files only if not already there.
 ; You could technically do this in one line after SetOverwrite off
