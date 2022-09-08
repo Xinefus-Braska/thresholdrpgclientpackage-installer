@@ -70,8 +70,8 @@ File MUSHclient\mushclient_prefs.sqlite
 File MUSHclient\MUSHclient.ini
 SetOutPath $INSTDIR\worlds
 File MUSHclient\worlds\ThresholdRPG.mcl
-SetOutPath $INSTDIR\worlds\plugins\state
-File MUSHclient\worlds\plugins\state\*
+;SetOutPath $INSTDIR\worlds\plugins\state
+;File MUSHclient\worlds\plugins\state\*
 SetOutPath $INSTDIR
 
 SectionEnd ; Installation section
